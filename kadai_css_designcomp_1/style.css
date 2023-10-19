@@ -1,0 +1,156 @@
+/* スマホ共通スタイル */
+
+body {
+  font-family: "Noto Sans";
+}
+
+/*================
+ PC用のスタイル 
+=================*/
+@media screen and (min-width: 768px) {
+  /* 横幅設定 */
+    body {
+      max-width:  1080px;
+      min-width:   960px;
+      margin: 0 auto;
+    }
+
+    /* ヘッダー */
+    header {
+      display: flex;
+
+    }
+
+    /* ナビゲーションのレイアウト */
+    #nav-pc{
+      position: relative;      
+      font-size: 34px;
+      margin: 5px 0 20px 0;
+      height: 69px;
+    }
+
+    #nav-pc > span {
+      position: absolute;
+      top: 20px;
+      left: 179px;
+      font-weight: bold;
+      border: solid 1px #000000;
+      padding: 5px 28.5px;
+    }
+
+    #nav-pc > a {
+      text-decoration: none;
+      font-weight: bold;
+
+    }
+    #nav-pc > a:link {
+      color: #0d0d0d;
+    }
+    #nav-pc > a:visited {
+      color: #0d0d0d;
+    }
+    #nav-pc > a:hover {
+      color: #0d0d0d;
+      text-decoration: underline;
+    }
+    #nav-pc > a:active {
+      color: #0d0d0d;
+    }
+
+    #nav-About {
+      position: absolute;
+      top: 20px;
+      left: 531px;
+    }
+    #nav-Works {
+      position: absolute;
+      top: 20px;
+      left: 670px;
+    }
+
+    /* スマホ用ナビを非表示 */
+    #nav-sp,
+    #menu-sp {
+      display: none;
+    }
+
+    /* メインビジュアル */
+    #main-visual img {
+      height: 400px;
+      width: auto;
+      margin-top: 10px;
+    }
+
+    /* 見出し */
+    h2 {
+      font-size: 34px;
+      text-align: center;
+      margin: 40px 0 0 0;
+    }
+
+    /* About */
+    #About {
+      align-items: center;
+      margin: 5px;
+      height: 340px;
+    }
+    .About-flex {
+      display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      max-width: 960px;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .About-photo {
+      border-radius: 50%;
+      width: 280px;
+      height: 280px;
+    }
+    .About-content {
+      border-radius: 50%;
+      width: 400px;
+    }
+    .About-content > span {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+    .About-content > p {
+      font-size: 18px;
+      margin: 0;
+      text-align: left;
+    }
+    .About-content > p::before {
+      content: "・";
+    }
+
+    /* Works */
+    #Works {
+      margin-bottom: 10px;
+    }
+    #Works > div {
+      text-align: center;
+      margin: 5px;
+    }
+    .Works-inlineblock {
+      display: inline-block;
+      width: 179px;
+      height: auto;
+      margin: 10px;
+    }
+    .Works-flex {
+      display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    /* フッター */
+    footer {
+      text-align: center;
+      font-size: 18px;
+    }
+  }
